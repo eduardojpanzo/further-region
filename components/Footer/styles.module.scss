@@ -1,0 +1,70 @@
+.rodapeContainer {
+	height: 70px;
+  padding: 3rem 0;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+  a{
+   font-size: 14px;
+   color:#555;
+ }
+
+.doubt{
+  display: flex;
+  align-items: center;
+  a{
+    color: #149ddd;
+  }
+  .termos a{
+    margin:0 10px;
+    color: #555;
+    
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+  .social a{
+      font-size: 20px;
+      margin: 0 5px;
+      
+      &:hover{
+        color:#149ddd;
+      }
+      
+      &.youtube:hover,
+      &.instagram:hover{
+        color: rgb(165, 47, 4);
+      }
+  }
+
+  .newsletter{
+
+    input{
+      padding: 15px;
+      margin: 2px;
+      border-radius: 5px;
+      border:1px solid #555;
+      outline: none;
+      
+      &::placeholder{
+          color: #555;
+      }
+      
+      &[type=email]{
+        background-color: transparent;
+        color: #555;
+      }
+      
+      &[type=submit]{
+          border:none;
+          background-color: #f2f3fb;
+          color: #1c2444;
+      }
+    }
+  }
+}

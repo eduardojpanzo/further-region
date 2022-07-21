@@ -1,0 +1,96 @@
+.header{
+	height: 70px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	position: relative;
+    
+    .headerContext {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: #ffffffc2;
+        
+        .container{
+            max-width: 1220px;
+	        margin: 0 auto;
+            height: 69px;
+            background:none;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .logo {
+                font-size: 1.5rem;
+
+                a span{
+                    color: #149ddd;
+                }
+            }
+            
+            .headerRight{
+                min-width: 490px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .menuNav{
+                    ul{
+                        display: flex;
+                        a{
+                            display: block;
+                            padding: 7px 10px;
+                            font-size: 1rem;
+                            transition: background 0.3s, color 0.3s;
+                            
+                            &:hover{
+                                background-color: rgba(20, 157, 221, 0.5);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .session{
+                    margin-left: 20px;
+	                font-size: 0.9em;
+
+                    .avatar{
+                        width: 45px;
+                        img{
+                           max-width: 100%;
+                       }
+                    }
+
+                    .buttons{
+                        display: flex;
+                        align-items: center;
+                        gap:5px;
+                        
+                        .btn_signin{
+                            border: 1px solid #0000001a;
+                            color: #a8a9b4;
+                        
+                        }
+                        .btn_signup{
+                            background: linear-gradient(to left, #91ddff,#149ddd);
+                            color: #fff;
+                        
+                        }
+                    }
+                }
+            }
+
+            .menu_bar{
+                display: none;
+                a{
+                    display: block;
+                    font-size: 16pt;
+                    color: #149ddd;
+                }
+            }
+        }
+    }
+
+}
