@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import {FaUserCircle} from 'react-icons/fa'
 import styles from './styles.module.scss'
 
 export function Header() {
@@ -30,8 +29,12 @@ export function Header() {
 					            </div>
                             ):(
                                 <div className={styles.buttons}>
-                                    <button className={styles.btn_signin}><FaUserCircle/> Login</button>
-                                    <button className={styles.btn_signup}>Cadastro</button>
+                                    <button className={styles.btn_signin}>
+                                        <Link href={'/signIn'}>Login</Link>
+                                    </button>
+                                    <button className={styles.btn_signup}>
+                                        <Link href={'/register'}>Cadastro</Link>
+                                    </button>
                                 </div>
                             )}
                         </div>

@@ -10,13 +10,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Home</title>
-        <meta name="description" content="App Home" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Further region Home" />
       </Head>
 
-      <Header/>
       <Banner/>
-      <Footer/>
     </>
   )
 }
