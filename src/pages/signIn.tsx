@@ -3,6 +3,7 @@ import Head from "next/head"
 import { LoginComponents } from "../components/FormElement"
 
 const SignIn: NextPage = () => {
+
     return (
       <>
         <Head>

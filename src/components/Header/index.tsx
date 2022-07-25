@@ -10,15 +10,15 @@ export function Header() {
             <div className={styles.headerContext}>
                 <div className={styles.container}>
                     <h1 className={styles.logo}>
-                        <a href="/">Further<span>Region</span></a>
+                        <a href="">Further<span>Region</span></a>
                     </h1>
 
                     <div className={styles.headerRight}>
                         <nav className={styles.menuNav}>
                             <ul>
-                            <li><Link href={'/'}>Home</Link></li>
-                            <li><Link href={'/watch'}>Watch</Link></li>
-                            <li><Link href={'/about'}>About</Link></li>
+                                <li><Link href="/">Home</Link></li>
+                                <li><Link href="/watch">Watch</Link></li>
+                                <li><Link href="/about">About</Link></li>
                             </ul>
                         </nav>
 
@@ -30,10 +30,10 @@ export function Header() {
                             ):(
                                 <div className={styles.buttons}>
                                     <button className={styles.btn_signin}>
-                                        <Link href={'/signIn'}>Login</Link>
+                                        <Link href="/signIn">Login</Link>
                                     </button>
                                     <button className={styles.btn_signup}>
-                                        <Link href={'/register'}>Cadastro</Link>
+                                        <Link href="/register">Cadastro</Link>
                                     </button>
                                 </div>
                             )}
