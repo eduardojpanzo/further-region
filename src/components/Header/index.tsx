@@ -17,8 +17,8 @@ export function Header() {
                         <nav className={styles.menuNav}>
                             <ul>
                                 <li><Link href="/">Home</Link></li>
-                                <li><Link href="/watch">Watch</Link></li>
-                                <li><Link href="/about">About</Link></li>
+                                <li><Link href="/zones">Encotre Locais</Link></li>
+                                <li><Link href="/about">Sobre nós</Link></li>
                             </ul>
                         </nav>
 

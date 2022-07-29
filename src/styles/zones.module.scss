@@ -1,0 +1,26 @@
+.zones_container{
+    max-width: 1220px;
+	margin: 0 auto;
+
+    .zones_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        margin-bottom: 40px;
+       
+        span{
+            font-weight: lighter;
+            font-size: 2rem;
+        }
+
+        .formsearch{
+            display: none;
+        }
+    }
+
+    .zones_context{
+        display: grid;
+        grid-template:repeat(3,1fr)/repeat(4,1fr);
+    }
+}
